@@ -9,7 +9,7 @@ let minhaListaDeItens = []
 
 function adicionarNovaTarefa() {
      // Verificar se o campo de entrada está vazio
-    if (input.value.trim() === ' '){
+    if (input.value.trim() === ''){
     alert("Por favor, insira uma tarefa antes de adicionar!");
     return; // Retorna para evitar adicionar uma tarefa vazia à lista
 }
@@ -71,3 +71,12 @@ function recarregarTarefas() {
 }
     mostrarTarefas() 
 }   recarregarTarefas()
+
+
+
+input.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter' && !event.shiftKey) {
+        event.preventDefault();
+        adicionarNovaTarefa(input.value);
+    }
+});

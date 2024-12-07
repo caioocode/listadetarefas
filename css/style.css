@@ -13,6 +13,11 @@ body {
     background: url(../imagens/background.jpg);
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 img {
     height: 30px;
     opacity: 0;
@@ -23,18 +28,19 @@ img {
 
 .container {
     background-color: lightgray;
-    width: 500px;
+    width: 600px;
     border-radius: 5px;
     padding: 20px;
-    margin: 100px auto 0
+    margin: 150px auto 0
 }
 
 .inputTask {
     border: none;
     border-radius: 10px;
-    width: 300px;
+    width: 360px;
     height: 40px;
     padding-left: 15px;
+    resize:none;
 }
 
 
@@ -46,7 +52,7 @@ img {
     color:white;
     font-size: 17px;
     font-weight: 700;
-    padding: 0 15px;
+    padding: 0 50px;
     float: right;
     cursor: pointer;
 }
@@ -60,13 +66,15 @@ img {
 }
 
 .listTasks {
-    width: 100%;
+    max-width: 100%;
     margin-top: 30px;
     list-style: none;
+
+    overflow: hidden;
 }
 
 .task {
-    height: 50px;
+    min-height: 50px;
     background-color: #f2f2f2;
     box-shadow: 1px 4px 10px rgba(0,0,0,0.2);
     display: flex;
@@ -77,6 +85,12 @@ img {
     margin-bottom: 20px;
     cursor: pointer;
 
+    overflow: hidden;
+
+}
+
+.task p {
+    word-break: break-all;
 }
 
 .task:hover img {
@@ -87,3 +101,4 @@ img {
     background-color: #8fac55;
     text-decoration: line-through;
 }
+
