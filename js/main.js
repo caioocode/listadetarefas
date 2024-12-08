@@ -87,5 +87,5 @@ document.getElementById("logout-btn").addEventListener("click", () => {
     localStorage.removeItem("auth_token");  // Ou sessionStorage.removeItem("auth_token");
     
     // Redirecionar para a tela de login
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 });

@@ -18,7 +18,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
     if (response.ok) {
         localStorage.setItem("token", data.token);
         alert("Login bem-sucedido!");
-        window.location.href = "index.html"; // Redireciona para a página principal
+        window.location.href = "home.html"; // Redireciona para a página principal
     } else {
         alert(data.message);
     }
