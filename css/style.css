@@ -102,3 +102,24 @@ img {
     text-decoration: line-through;
 }
 
+#logout-btn {
+    border: none;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #8fac55;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logout-btn:hover {
+    background-color: #003329;
+}
+
+.btnLogOut {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-right: 30px;
+}

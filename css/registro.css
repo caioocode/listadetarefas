@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+    outline: none;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#auth-container {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    background-color: lightgray;
+    border-radius: 15px;
+    margin: 20px; /* Adicionado espaço para telas menores */
+    padding: 20px;
+}
+
+#auth-container p {
+    text-align: center;
+    margin-top: 60px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(10px, 20px);
+}
+
+#register-form input {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.registrar {
+    border: none;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #003329;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registrar:hover {
+    background-color: #45a049;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    #auth-container {
+        height: auto;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    #register-form input {
+        max-width: 100%;
+    }
+
+    .registrar {
+        width: 100%;
+    }
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+    #auth-container {
+        margin: 50px auto;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #register-form input {
+        max-width: 90%;
+    }
+
+    .registrar {
+        width: 90%;
+    }
+}
+
+
