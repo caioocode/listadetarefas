@@ -1,39 +1,25 @@
+<!-- login.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
-
-    <title>Lista de Tarefas</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
-
 <body>
-    <div class="btnLogOut">
-        <!-- Exemplo de botão de logout -->
-        <button id="logout-btn">Logout</button>
+    <div id="auth-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Usuário" required />
+
+            <input type="password" id="login-password" placeholder="Senha" required />
+            
+            <button type="submit" class="entrar">Entrar</button>
+        </form>
+        <p>Não tem uma conta? <a href="register.html">Registre-se</a></p>
     </div>
-    
-    <div class="container">
-        <h1>MINHAS TAREFAS</h1>
-        <input type="text"  class="inputTask" placeholder="O que tenho que fazer...">
 
-        <!-- <textarea class="inputTask" placeholder="O que tenho que fazer..."></textarea> -->
-
-        <button class="buttonAddTask">Adicionar</button>
-
-        <ul class="listTasks">
-
-
-        </ul>
-    </div>
+    <script src="js/login.js"></script>
 </body>
-
-<script src="js/main.js"></script>
-
 </html>
