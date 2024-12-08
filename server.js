@@ -13,17 +13,17 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Configuração do banco de dados
-const db = new sqlite3.Database(':memory:');
+const db = new sqlite3.Database('./mydatabase.db');
 
 // Criar tabelas
 db.serialize(() => {
-    db.run(`CREATE TABLE users (
+    db.run(`CREATE TABLE IF NOT EXISTS users (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         username TEXT NOT NULL UNIQUE,
         password TEXT NOT NULL
     )`);
     
-    db.run(`CREATE TABLE tasks (
+    db.run(`CREATE TABLE IF NOT EXISTS tasks (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         userId INTEGER,
         task TEXT,

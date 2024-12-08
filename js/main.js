@@ -80,3 +80,12 @@ input.addEventListener('keypress', function(event) {
         adicionarNovaTarefa(input.value);
     }
 });
+
+
+document.getElementById("logout-btn").addEventListener("click", () => {
+    // Remover o token do localStorage ou sessionStorage
+    localStorage.removeItem("auth_token");  // Ou sessionStorage.removeItem("auth_token");
+    
+    // Redirecionar para a tela de login
+    window.location.href = "login.html";
+});
