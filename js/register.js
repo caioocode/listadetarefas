@@ -20,7 +20,7 @@ document.getElementById("register-form").addEventListener("submit", async (e) =>
     if (response.ok) {
         alert("Cadastro realizado com sucesso!");
         // Redireciona para a página de lista de tarefas (index.html)
-        window.location.href = "index.html"; 
+        window.location.href = "home.html"; 
     } else {
         alert(data.message || "Erro ao registrar. Tente novamente.");
     }
