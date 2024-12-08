@@ -1,5 +1,5 @@
 // register.js
-const API_URL = "http://localhost:3000";
+const API_URL = "https://listadetarefas-8241.onrender.com";
 
 // Registro de novo usuário
 document.getElementById("register-form").addEventListener("submit", async (e) => {

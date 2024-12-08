@@ -1,5 +1,5 @@
 // login.js
-const API_URL = "http://localhost:3000";
+const API_URL = "https://listadetarefas-8241.onrender.com";
 
 // Login do usuário
 document.getElementById("login-form").addEventListener("submit", async (e) => {
