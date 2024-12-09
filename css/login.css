@@ -67,21 +67,26 @@ h2 {
 
 /* Responsividade para telas pequenas */
 @media (max-width: 768px) {
+    
     #auth-container {
         height: auto;
         padding: 20px;
+        font-family: "Montserrat", serif;
     }
 
     h2 {
         font-size: 24px;
+        font-family: "Montserrat", serif;
     }
 
     #login-form input {
         max-width: 100%;
+        font-family: "Montserrat", serif;
     }
 
     .entrar {
         width: 100%;
+        font-family: "Montserrat", serif;
     }
 }
 

@@ -90,18 +90,22 @@ h2 {
     #auth-container {
         margin: 50px auto;
         width: 90%;
+        font-family: "Montserrat", serif;
     }
 
     h2 {
         font-size: 20px;
+        font-family: "Montserrat", serif;
     }
 
     #register-form input {
         max-width: 90%;
+        font-family: "Montserrat", serif;
     }
 
     .registrar {
         width: 90%;
+        font-family: "Montserrat", serif;
     }
 }
 
