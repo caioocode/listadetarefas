@@ -1,19 +1,64 @@
-# Lista de Tarefas
-Este é um projeto simples de Lista de Tarefas desenvolvido em HTML, CSS e JavaScript. Ele permite que os usuários adicionem, visualizem e gerenciem suas tarefas diárias de forma eficaz. A aplicação oferece uma interface intuitiva onde é possível inserir tarefas, marcar como concluídas e visualizar o progresso em uma lista organizada.
+# **Descrição do App - Lista de Tarefas com Login e Registro**
 
-Funcionalidades
-Adicionar Tarefas: O usuário pode inserir uma nova tarefa em um campo de texto. O formato de entrada permite que o texto contenha quebras de linha, facilitando a inclusão de notas ou descrições.
+Este é um aplicativo web simples e funcional para gerenciar tarefas pessoais, desenvolvido com um sistema de autenticação para garantir que cada usuário tenha acesso apenas às suas próprias listas. O app foi construído com as seguintes funcionalidades:
 
-Visualização de Tarefas: As tarefas são exibidas em uma lista, com a opção de visualizar cada item em múltiplas linhas, respeitando as quebras de linha inseridas.
+## **Funcionalidades Principais**
+- **Autenticação de Usuário:**
+  - Registro de novos usuários com validação de dados.
+  - Login seguro utilizando senhas criptografadas com bcrypt e tokens JWT.
+  - Logout para encerrar sessões ativas.
 
-Marcar como Concluída: O usuário pode marcar uma tarefa como concluída, o que facilita a organização e o acompanhamento do que já foi feito.
+- **Gerenciamento de Tarefas:**
+  - Adicionar novas tarefas à lista.
+  - Marcar tarefas como concluídas.
+  - Excluir tarefas indesejadas.
+  - Visualizar a lista de tarefas associada ao usuário autenticado.
 
-Remover Tarefas: Tarefas podem ser removidas da lista conforme necessário, permitindo uma gestão dinâmica da lista de tarefas.
+## **Tecnologias Utilizadas**
+- **Frontend:**
+  - HTML, CSS e JavaScript para a interface do usuário.
+  - Design responsivo para compatibilidade com diferentes tamanhos de tela.
+  
+- **Backend:**
+  - Node.js com Express para lidar com as rotas e lógica do servidor.
+  - SQLite como banco de dados local para armazenar usuários e tarefas.
+  - JWT para autenticação segura.
 
-Armazenamento Local: As tarefas são salvas no armazenamento local do navegador, garantindo que as informações persistam mesmo após o fechamento da página.
+- **Hospedagem:**
+  - Frontend hospedado no Netlify.
+  - Backend hospedado no Render.
 
-Tecnologias Utilizadas
-HTML: Para estruturar o layout da aplicação.
-CSS: Para estilizar a interface e garantir uma apresentação visualmente agradável.
-JavaScript: Para implementar a lógica funcional, como adição, remoção e manipulação de tarefas.
+## **Como Funciona**
+1. Ao acessar o aplicativo, o usuário é direcionado à página de login.
+2. Usuários novos podem se registrar preenchendo um nome de usuário e senha.
+3. Após o login, o usuário é redirecionado à aplicação, onde pode:
+   - Adicionar novas tarefas.
+   - Visualizar tarefas pendentes ou concluídas.
+   - Excluir ou atualizar o status das tarefas.
+4. A funcionalidade de logout permite ao usuário sair da conta, retornando à página de login.
+
+## **Como Rodar Localmente**
+1. Clone o repositório do GitHub:
+   ```
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   ```
+2. Navegue até a pasta do projeto:
+   ```
+   cd seu-repositorio
+   ```
+3. Instale as dependências do backend:
+   ```
+   npm install
+   ```
+4. Inicie o servidor backend:
+   ```
+   node server.js
+   ```
+5. Abra o arquivo `index.html` do frontend em seu navegador para testar localmente.
+
+## **Hospedagem**
+- [Frontend no Netlify](https://seu-netlify-link.netlify.app)
+- [Backend no Render](https://seu-render-link.onrender.com)
+
+Sinta-se à vontade para contribuir com melhorias ou sugerir novas funcionalidades para este projeto! 😊
 
